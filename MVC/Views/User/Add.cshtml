@@ -1,0 +1,20 @@
+﻿@using ClassLibrary
+@model User
+<html>
+	<head>
+
+	</head>
+	<body class="container">
+    <form  asp-controller="User" asp-action="Add" method="post">
+        <div class="form-group">
+            <label>İsim</label>
+            <input type="text" asp-for="@Model.isim" class="form-control" >
+        </div>
+        <div class="form-group">
+            <label >Kullanıcı puanı</label>
+            <input type="number"  asp-for="@Model.puan" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-success">Ekle</button>
+    </form>
+	</body>
+</html>
